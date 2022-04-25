@@ -1,0 +1,833 @@
+/* web version Bureau */
+@media screen and (min-width: 768px) {
+	* {
+		box-sizing: border-box;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 10px 0 10px;
+		margin-left: 30px;
+	}
+
+	.logo {
+		display: flex;
+	}
+
+	.logo img {
+		border: 0;
+		width: 120px;
+		height: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	header div:nth-child(2) {
+		display: flex;
+		width: 300px;
+	}
+
+	header div:nth-child(2) * {
+		flex: 1;
+		display: block;
+		text-align: center;
+		font-weight: bold;
+		height: 90px;
+		line-height: 90px;
+		padding: 3px 10px 0 10px;
+	}
+
+	.element:hover {
+		padding-top: 0px;
+		color: #0065fc;
+		border-top: 3px solid;
+		border-color: #0065fc;
+	}
+
+	main {
+		margin-left: 30px;
+	}
+
+	#phrasesIntroductive {
+		padding-bottom: 20px;
+	}
+
+	h2 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	main div:nth-child(1) a {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+
+	#formDeRecherche {
+		display: flex;
+		height: 45px;
+		width: 360px;
+		border-radius: 16px;
+		overflow: hidden;
+	}
+
+	#formDeRecherche * {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	#formDeRecherche div {
+		width: 45px;
+		text-align: center;
+		background-color: #F2F2F2;
+	}
+
+	#formDeRecherche div * {
+		line-height: 45px
+	}
+
+	#formDeRecherche input {
+		border: 0px;
+		border-top: 2px solid;
+		border-bottom: 2px solid;
+		border-color: #F2F2F2;
+		padding-left: 10px;
+		flex: 1;
+		font-weight: 900;
+	}
+
+	#formDeRecherche button {
+		border: 0;
+		padding: 0 15px 0 15px;
+		background-color: #0065FC;
+	}
+
+	#formDeRecherche button a {
+		color: white;
+		font-weight: 900;
+	}
+
+	#formDeRecherche button i {
+		display: none;
+	}
+
+	#filtre {
+		display: flex;
+		margin-top: 10px;
+		flex-wrap: wrap;
+	}
+
+	.filtres {
+		border: 3px solid;
+		border-color: #F2F2F2;
+		height: 50px;
+		border-radius: 25px;
+		display: flex;
+		margin: 0 10px 0 10px;
+	}
+
+	.filtres div {
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		display: block;
+		border-radius: 23px;
+		background-color: #DEEBFF;
+		border: 3px solid;
+		border-color: #DEEBFF;
+		position: relative;
+		top: -3px;
+		left: -3px;
+	}
+
+	.filtres div i {
+		color: #0065FC;
+		line-height: 45px;
+	}
+
+	.filtres input {
+		display: none;
+	}
+
+	.filtres label {
+		padding: 0 10px 0 10px;
+		line-height: 45px;
+		font-weight: 900;
+	}
+
+	#phraseInformative {
+		display: flex;
+		margin-top: 10px;
+		height: 20px;
+		line-height: 20px;
+	}
+
+	#phraseInformative div {
+		border: 2px solid;
+		border-color: #F2F2F2;
+		margin-right: 10px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 20px;
+		font-weight: 900;
+		color: #0065FC;
+	}
+
+	#HAMLPP {
+		display: flex;
+		margin-top: 30px;
+	}
+
+	#hebergementAMarseille {
+		flex: 2;
+		background-color: #F2F2F2;
+		border-radius: 20px;
+		margin: 0 20px 0 0;
+	}
+
+	#hebergementAMarseille h2:nth-child(1) {
+		margin: 40px 0 25px 40px;
+		font-size: 18px;
+	}
+
+	#hebergementAMarseille .cardConteneur {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 0 20px 0 20px;
+	}
+
+	#hebergementAMarseille .card {
+		width: 260px;
+		display: block;
+		margin: 0 auto;
+		background-color: white;
+		box-shadow: 0px 5px 20px #999;
+		border-radius: 23px;
+		margin-bottom: 40px;
+		padding: 4px;
+	}
+
+	#hebergementAMarseille .card-image {
+		width: 100%;
+		height: 120px;
+		position: relative;
+		border-radius: 23px 23px 0 0;
+		object-fit: cover;
+	}
+
+	#hebergementAMarseille .card-body * {
+		margin: 2px 0 2px 3px;
+	}
+
+	#hebergementAMarseille .card-price {
+		font-size: 13px;
+	}
+
+	#hebergementAMarseille .card-note {
+		margin-left: 8px;
+	}
+
+	#hebergementAMarseille .card-note i {
+		margin: 0;
+		font-size: 11px;
+		width: 10px;
+	}
+
+	.bleu {
+		color: #0065fc;
+	}
+
+	.gris {
+		color: #F2F2F2;
+	}
+
+	#hebergementAMarseille p:nth-child(3) {
+		font-weight: bold;
+		margin: 0 0 30px 30px;
+	}
+
+	#lesPlusPopulaires {
+		flex: 1;
+		background-color: #F2F2F2;
+		border-radius: 20px;
+		margin: 0 10px 0 20px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#lesPlusPopulaires .titre {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 0 10px 0;
+	}
+
+	#lesPlusPopulaires .titre h2 {
+		margin: 40px 0 0 30px;
+		font-size: 18px;
+	}
+
+	#lesPlusPopulaires .titre i {
+		width: 80px;
+		font-size: 25px;
+		margin: auto 0 0 0;
+		font-weight: bold;
+	}
+
+	#lesPlusPopulaires .cardConteneur {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		height: 100%;
+		margin: 0 30px 0 30px;
+	}
+
+	#lesPlusPopulaires .card {
+		width: 410px;
+		height: 150px;
+		display: flex;
+		margin: 0 auto;
+		background-color: white;
+		box-shadow: 0px 5px 20px #999;
+		border-radius: 25px;
+		padding: 5px;
+	}
+
+	#lesPlusPopulaires .card-image {
+		width: 130px;
+		height: 100%;
+		position: relative;
+		border-radius: 25px 0 0 25px;
+		object-fit: cover;
+	}
+
+	#lesPlusPopulaires .card-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#lesPlusPopulaires .card-body * {
+		margin: 5px 0 0 5px;
+	}
+
+	#lesPlusPopulaires .card-title {
+		font-size: 15px;
+	}
+
+	#lesPlusPopulaires .card-price {
+		font-size: 13px;
+	}
+
+	#lesPlusPopulaires .card-note {
+		margin-left: 10px;
+	}
+
+	#lesPlusPopulaires .card-note i {
+		margin: auto 0 10px 0;
+		font-size: 13px;
+		width: 11px;
+	}
+
+	#activitesAMarseille {
+		height: 650px;
+		margin: 60px 20px 0 0;
+	}
+
+	#activitesAMarseille .container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+	}
+
+	#activitesAMarseille .card  {
+		box-shadow: 0px 5px 20px #999;
+		border-radius: 25px;
+		width: 330px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#activitesAMarseille .prct100 {
+		height: 100%;
+	}
+
+	#activitesAMarseille .prct60 {
+		height: 55%;
+	}
+
+	#activitesAMarseille .prct50 {
+		height: 45%;
+	}
+
+	#activitesAMarseille .prct40 {
+		height: 35%;
+	}
+
+	#activitesAMarseille img {
+		width: 100%;
+		position: relative;
+		border-radius: 25px 25px 0 0 ;
+		object-fit: cover;
+		flex: 1;
+		overflow: hidden;
+	}
+
+	#activitesAMarseille .activites-name {
+		height: 50px;
+		padding: auto 0 ;
+		font-weight: bold;
+		font-size: 18px;
+		padding: 18px 0 0 20px;
+	}
+
+	footer {
+		height: 300px;
+		background-color: #F2F2F2;
+		margin: 100px 0 0 0;
+		display: flex;
+		padding-top: 60px;
+	}
+
+	footer div {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		padding: 0 30px 0 30px;
+	}
+
+	footer ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	footer li {
+		margin: 0 0 16px 0;
+	}
+}
+
+
+
+
+/* web version Mobile */
+@media screen and (max-width: 768px) {
+	* {
+		box-sizing: border-box;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.logo {
+		width: 125px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.logo img {
+		border: 0;
+	}
+
+	header div {
+		display: flex;
+	}
+
+	header div * {
+		display: block;
+		flex: 1;
+		font-weight: bold;
+		border-bottom: 3px solid;
+		border-color: #F2F2F2;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+
+	.element:hover {
+		color: #0065fc;
+		border-color: #0065fc;
+	}
+
+	#phrasesIntroductive,
+	#formDeRecherche,
+	#filtre,
+	#phraseInformative {
+		margin: 0 30px 0 30px;
+	}
+
+	#phrasesIntroductive {
+		padding-bottom: 10px;
+	}
+
+	#phrasesIntroductive h2 {
+		font-weight: 900;
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	#phrasesIntroductive a {
+		font-size: 15px;
+		margin-bottom: 10px;
+	}
+
+	#formDeRecherche {
+		display: flex;
+		height: 55px;
+		border-radius: 16px;
+		margin-top: 40px;
+		overflow: hidden;
+	}
+
+	#formDeRecherche * {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	#formDeRecherche div {
+		width: 55px;
+		text-align: center;
+		background-color: #F2F2F2;
+		text-align: center;
+	}
+
+	#formDeRecherche div * {
+		line-height: 55px
+	}
+
+	#formDeRecherche input {
+		border: 0px;
+		border-top: 2px solid;
+		border-bottom: 2px solid;
+		border-color: #F2F2F2;
+		padding-left: 10px;
+		flex: 1;
+		font-weight: 900;
+	}
+
+	#formDeRecherche button {
+		width: 55px;
+		border: 0;
+		padding: 0 15px 0 15px;
+		background-color: #0065FC;
+		border-radius: 16px;
+	}
+
+	#formDeRecherche button a {
+		display: none;
+	}
+
+	#formDeRecherche button i {
+		color: white;
+		font-weight: 900;
+		line-height: 55px
+	}
+
+	#filtre {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#filtre h2 {
+		width: 100%;
+		margin: 35px 0 5px 0;
+	}
+
+	.filtres {
+		border: 3px solid;
+		border-color: #F2F2F2;
+		height: 50px;
+		border-radius: 25px;
+		display: flex;
+		margin: 10px 10px 0 10px;
+	}
+
+	.filtres div {
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		display: block;
+		border-radius: 23px;
+		background-color: #DEEBFF;
+		border: 3px solid;
+		border-color: #DEEBFF;
+		position: relative;
+		top: -3px;
+		left: -3px;
+	}
+
+	.filtres div i {
+		color: #0065FC;
+		line-height: 45px;
+	}
+
+	.filtres input {
+		display: none;
+	}
+
+	.filtres label {
+		padding: 0 10px 0 10px;
+		line-height: 45px;
+		font-weight: 900;
+	}
+
+	#phraseInformative {
+		display: flex;
+		margin-top: 10px;
+		height: 20px;
+		line-height: 20px;
+	}
+
+	#phraseInformative div {
+		border: 2px solid;
+		border-color: #F2F2F2;
+		margin-right: 10px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 20px;
+		font-weight: 900;
+		color: #0065FC;
+	}
+
+	#HAMLPP {
+		display: flex;
+		margin-top: 30px;
+		flex-direction: column-reverse;
+	}
+
+	#hebergementAMarseille {
+		flex: 2;
+		background-color: white;
+		margin: 0;
+	}
+
+	#hebergementAMarseille h2:nth-child(1) {
+		margin: 40px 0 25px 30px;
+	}
+
+	#hebergementAMarseille .cardConteneur {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 0 20px 0 20px;
+	}
+
+	#hebergementAMarseille .card {
+		height: 220px;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		background-color: white;
+		box-shadow: 0px 5px 20px #999;
+		border-radius: 23px;
+		margin-bottom: 40px;
+		padding: 4px;
+	}
+
+	#hebergementAMarseille .card-image {
+		width: 100%;
+		height: 140px;
+		position: relative;
+		border-radius: 23px 23px 0 0;
+		object-fit: cover;
+	}
+
+	#hebergementAMarseille .card-body * {
+		margin: 0;
+	}
+
+	#hebergementAMarseille .card-price {
+		font-size: 13px;
+	}
+
+	#hebergementAMarseille .card-note {
+		margin-left: 8px;
+	}
+
+	#hebergementAMarseille .card-note i {
+		margin: 0;
+		font-size: 11px;
+		width: 10px;
+	}
+
+	.bleu {
+		color: #0065fc;
+	}
+
+	.gris {
+		color: #F2F2F2;
+	}
+
+	#hebergementAMarseille p:nth-child(3) {
+		font-weight: bold;
+		margin: 0 0 30px 30px;
+	}
+
+	#lesPlusPopulaires {
+		flex: 1;
+		background-color: #F2F2F2;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 20px;
+	}
+
+	#lesPlusPopulaires div {
+		display: flex;
+	}
+
+	#lesPlusPopulaires .titre {
+		justify-content: space-between;
+	}
+
+	#lesPlusPopulaires .titre h2 {
+		margin: 20px 0 15px 30px;
+	}
+
+	#lesPlusPopulaires .titre i {
+		width: 80px;
+		font-size: 25px;
+		margin: auto 0 auto 0;
+	}
+
+	#lesPlusPopulaires .cardConteneur {
+		flex-direction: column;
+		justify-content: space-around;
+		height: 100%;
+		margin: 0 20px 0 20px;
+	}
+
+	#lesPlusPopulaires .card {
+		width: 100%;
+		height: 160px;
+		display: flex;
+		margin: 0 auto;
+		margin-top: 15px;
+		background-color: white;
+		box-shadow: 0px 5px 20px #999;
+		border-radius: 25px;
+		padding: 5px;
+	}
+
+	#lesPlusPopulaires .card-image {
+		width: 130px;
+		height: 100%;
+		position: relative;
+		border-radius: 25px 0 0 25px;
+		object-fit: cover;
+	}
+
+	#lesPlusPopulaires .card-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	#lesPlusPopulaires .card-body * {
+		margin: 5px 0 0 5px;
+		flex-direction: column;
+	}
+
+	#lesPlusPopulaires .card-title {
+		font-size: 15px;
+	}
+
+	#lesPlusPopulaires .card-price {
+		font-size: 13px;
+	}
+
+	#lesPlusPopulaires .card-note {
+		margin-left: 10px;
+		flex-direction: row;
+	}
+
+	#lesPlusPopulaires .card-note i {
+		margin: auto 2px 10px 2px;
+		font-size: 13px;
+		width: 11px;
+	}
+
+	#activitesAMarseille {
+		margin: 20px 20px 0 0;
+	}
+
+	#activitesAMarseille h2 {
+		margin-left: 20px;
+	}
+
+	#activitesAMarseille .container {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		padding: 0 0 0 20px;
+	}
+
+	#activitesAMarseille .card  {
+		height: 200px;
+		width: 100%;
+		display: block;
+		margin: 0 auto;
+		background-color: white;
+		box-shadow: 0px 5px 20px #999;
+		border-radius: 23px;
+		margin-bottom: 40px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	#activitesAMarseille img {
+		width: 100%;
+		position: relative;
+		border-radius: 25px 25px 0 0 ;
+		object-fit: cover;
+		flex: 1;
+		overflow: hidden;
+	}
+
+	#activitesAMarseille .activites-name {
+		height: 50px;
+		padding: auto 0 ;
+		font-weight: bold;
+		font-size: 18px;
+		padding: 18px 0 0 20px;
+	}
+
+	footer {
+		background-color: #F2F2F2;
+		margin: 0 0 0 0;
+		display: flex;
+		flex-direction: column;
+		padding-top: 20px;
+		height: 600px;
+	}
+
+	footer div {
+		display: flex;
+		flex-direction: column;
+		padding: 0 30px 0 30px;
+	}
+
+	footer h3 {
+		margin-top: 40px;
+	}
+
+	footer ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	footer li {
+		margin: 7px 0 7px 0;
+	}
+}
