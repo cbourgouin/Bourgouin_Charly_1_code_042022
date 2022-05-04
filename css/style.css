@@ -1,8 +1,18 @@
 /* web version Bureau */
 @media screen and (min-width: 992px) {
+	body {
+		max-width: 1900px;
+		margin: 0 auto;
+	}
+	
 	* {
 		box-sizing: border-box;
 		font-family: 'Raleway', sans-serif;
+	}
+
+	h2 { 
+		font-size: 20px;
+		margin-bottom: 10px;
 	}
 
 	header {
@@ -19,7 +29,6 @@
 	.logo img {
 		border: 0;
 		width: 120px;
-		height: auto;
 		margin-top: auto;
 		margin-bottom: auto;
 	}
@@ -54,11 +63,6 @@
 		padding-bottom: 20px;
 	}
 
-	h2 {
-		font-size: 20px;
-		margin-bottom: 10px;
-	}
-
 	main div:nth-child(1) a {
 		font-size: 15px;
 		margin-bottom: 10px;
@@ -66,8 +70,8 @@
 
 	#formDeRecherche {
 		display: flex;
-		height: 45px;
-		width: 360px;
+		height: 50px;
+		width: 375px;
 		border-radius: 16px;
 		overflow: hidden;
 	}
@@ -79,13 +83,13 @@
 	}
 
 	#formDeRecherche div {
-		width: 45px;
+		width: 50px;
 		text-align: center;
 		background-color: #F2F2F2;
 	}
 
 	#formDeRecherche div * {
-		line-height: 45px
+		line-height: 50px;
 	}
 
 	#formDeRecherche input {
@@ -119,6 +123,11 @@
 		flex-wrap: wrap;
 	}
 
+	#filtre h2 {
+		line-height: 35px;
+		margin-right: 20px;
+	}
+
 	.filtres {
 		border: 3px solid;
 		border-color: #F2F2F2;
@@ -126,6 +135,11 @@
 		border-radius: 25px;
 		display: flex;
 		margin: 10px 10px 0 10px;
+	}
+
+	.filtres:hover {
+		border-color: #0065FC;
+		
 	}
 
 	.filtres div {
@@ -141,10 +155,18 @@
 		top: -3px;
 		left: -3px;
 	}
+	.filtres:hover div{
+		background-color: #0065FC;
+		border-color: #0065FC;
+	}
 
 	.filtres div i {
 		color: #0065FC;
 		line-height: 45px;
+	}
+
+	.filtres:hover div i {
+		color: #DEEBFF;
 	}
 
 	.filtres input {
@@ -159,7 +181,7 @@
 
 	#phraseInformative {
 		display: flex;
-		margin-top: 10px;
+		margin-top: 30px;
 		height: 20px;
 		line-height: 20px;
 	}
@@ -168,8 +190,8 @@
 		border: 2px solid;
 		border-color: #F2F2F2;
 		margin-right: 10px;
-		width: 20px;
-		height: 20px;
+		width: 22px;
+		height: 22px;
 		border-radius: 50%;
 		text-align: center;
 		line-height: 20px;
@@ -183,55 +205,65 @@
 	}
 
 	#hebergementAMarseille {
-		flex: 2;
+		flex: 3;
 		background-color: #F2F2F2;
 		border-radius: 20px;
-		margin: 0 20px 0 0;
+		margin: 0 50px 0 0;
 	}
 
 	#hebergementAMarseille h2:nth-child(1) {
 		margin: 40px 0 25px 40px;
-		font-size: 18px;
+		font-size: 23px;
 	}
 
 	#hebergementAMarseille .cardConteneur {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around; 
-		max-width: 940px;
 		min-width: 700px;
-		margin: 0 auto;
 	}
 
 	#hebergementAMarseille .card {
-		width: 260px;
+		max-width: 320px;
+		min-width: 300px;
 		display: block;
-		margin: 0 auto;
 		background-color: white;
 		box-shadow: 0px 5px 20px #999;
 		border-radius: 23px;
-		margin-bottom: 40px;
+		margin: 0 20px 50px 20px;
 		padding: 4px;
+	}
+
+	#hebergementAMarseille .card:hover {
+		padding: 0;
 	}
 
 	#hebergementAMarseille .card-image {
 		width: 100%;
-		height: 120px;
+		height: 160px;
 		position: relative;
 		border-radius: 23px 23px 0 0;
 		object-fit: cover;
 	}
 
+	#hebergementAMarseille .card:hover .card-image {
+		height: 164px;
+	}
+
 	#hebergementAMarseille .card-body * {
-		margin: 2px 0 2px 3px;
+		margin: 4px 0 4px 3px;
+	}
+
+	#hebergementAMarseille .card:hover .card-body {
+		margin: 0 4px 0 4px;
 	}
 
 	#hebergementAMarseille .card-price {
-		font-size: 13px;
+		font-size: 15px;
 	}
 
 	#hebergementAMarseille .card-note {
-		margin-left: 8px;
+		margin: auto auto 5px 8px;
 	}
 
 	#hebergementAMarseille .card-note i {
@@ -250,7 +282,7 @@
 
 	#hebergementAMarseille p:nth-child(3) {
 		font-weight: bold;
-		margin: 0 0 30px 30px;
+		margin: 0 0 40px 30px;
 	}
 
 	#lesPlusPopulaires {
@@ -270,7 +302,7 @@
 
 	#lesPlusPopulaires .titre h2 {
 		margin: 40px 0 0 30px;
-		font-size: 18px;
+		font-size: 23px;
 	}
 
 	#lesPlusPopulaires .titre i {
@@ -285,18 +317,24 @@
 		flex-direction: column;
 		justify-content: space-around;
 		height: 100%;
-		margin: 0 30px 0 30px;
+		margin: 20px 30px 0 30px;
 	}
 
 	#lesPlusPopulaires .card {
 		width: 410px;
-		height: 150px;
+		min-height: 150px;
 		display: flex;
 		margin: 0 auto;
 		background-color: white;
 		box-shadow: 0px 5px 20px #999;
 		border-radius: 25px;
 		padding: 5px;
+		margin-bottom: 50px;
+		flex: 1;
+	}
+
+	#lesPlusPopulaires .card:hover {
+		padding: 0;
 	}
 
 	#lesPlusPopulaires .card-image {
@@ -307,10 +345,18 @@
 		object-fit: cover;
 	}
 
+	#lesPlusPopulaires .card:hover .card-image{
+		width: 135px;
+	}
+
 	#lesPlusPopulaires .card-body {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+
+	#lesPlusPopulaires .card:hover .card-body {
+		margin: 5px 5px 5px 0;
 	}
 
 	#lesPlusPopulaires .card-body * {
@@ -338,6 +384,11 @@
 	#activitesAMarseille {
 		height: 650px;
 		margin: 60px 20px 0 0;
+	}
+
+	#activitesAMarseille h2 {
+		font-size: 23px;
+		margin-bottom: 30px;
 	}
 
 	#activitesAMarseille .container {
@@ -399,20 +450,19 @@
 		padding-top: 60px;
 	}
 
-	footer div {
+	footer dl {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 		padding: 0 30px 0 30px;
 	}
 
-	footer ul {
-		list-style: none;
-		padding: 0;
+	footer dt, footer dd{
+		margin: 0 0 16px 0;
 	}
 
-	footer li {
-		margin: 0 0 16px 0;
+	footer dt {
+		font-weight: bold;
 	}
 }
 
@@ -539,6 +589,10 @@
 		flex-wrap: wrap;
 	}
 
+	#filtre h2 {
+		line-height: 30px;
+	}
+
 	.filtres {
 		border: 3px solid;
 		border-color: #F2F2F2;
@@ -546,6 +600,10 @@
 		border-radius: 25px;
 		display: flex;
 		margin: 10px 10px 0 10px;
+	}
+
+	.filtres:hover {
+		border-color: #0065FC;
 	}
 
 	.filtres div {
@@ -562,9 +620,18 @@
 		left: -3px;
 	}
 
+	.filtres:hover div {
+		background-color: #0065FC;
+		border-color: #0065FC;
+	}
+
 	.filtres div i {
 		color: #0065FC;
 		line-height: 45px;
+	}
+
+	.filtres:hover div i {
+		color: #DEEBFF;
 	}
 
 	.filtres input {
@@ -579,7 +646,7 @@
 
 	#phraseInformative {
 		display: flex;
-		margin-top: 10px;
+		margin-top: 30px;
 		height: 20px;
 		line-height: 20px;
 	}
@@ -588,8 +655,8 @@
 		border: 2px solid;
 		border-color: #F2F2F2;
 		margin-right: 10px;
-		width: 20px;
-		height: 20px;
+		width: 22px;
+		height: 22px;
 		border-radius: 50%;
 		text-align: center;
 		line-height: 20px;
@@ -633,6 +700,10 @@
 		padding: 4px;
 	}
 
+	#hebergementAMarseille .card:hover {
+		padding: 0;
+	}
+
 	#hebergementAMarseille .card-image {
 		width: 100%;
 		height: 120px;
@@ -641,8 +712,16 @@
 		object-fit: cover;
 	}
 
+	#hebergementAMarseille .card:hover .card-image {
+		height: 124px;
+	}
+
 	#hebergementAMarseille .card-body * {
 		margin: 2px 0 2px 3px;
+	}
+
+	#hebergementAMarseille .card:hover .card-body {
+		margin: 0 4px 0 4px;
 	}
 
 	#hebergementAMarseille .card-price {
@@ -720,6 +799,10 @@
 		padding: 5px;
 	}
 
+	#lesPlusPopulaires .card:hover {
+		padding: 0;
+	}
+
 	#lesPlusPopulaires .card-image {
 		width: 130px;
 		height: 100%;
@@ -728,10 +811,18 @@
 		object-fit: cover;
 	}
 
+	#lesPlusPopulaires .card:hover .card-image{
+		width: 135px;
+	}
+
 	#lesPlusPopulaires .card-body {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+
+	#lesPlusPopulaires .card:hover .card-body {
+		margin: 5px 5px 5px 0;
 	}
 
 	#lesPlusPopulaires .card-body * {
@@ -762,6 +853,7 @@
 
 	#activitesAMarseille h2 {
 		margin: 30px 0 20px 20px;
+		font-size: 23px;
 	}
 
 	#activitesAMarseille .container {
@@ -808,20 +900,19 @@
 		padding-top: 60px;
 	}
 
-	footer div {
+	footer dl {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 		padding: 0 30px 0 30px;
 	}
 
-	footer ul {
-		list-style: none;
-		padding: 0;
+	footer dt, footer dd{
+		margin: 0 0 16px 0;
 	}
 
-	footer li {
-		margin: 0 0 16px 0;
+	footer dt {
+		font-weight: bold;
 	}
 }
 
@@ -830,6 +921,10 @@
 	* {
 		box-sizing: border-box;
 		font-family: 'Raleway', sans-serif;
+	}
+
+	h2 {
+		font-size: 22px;
 	}
 
 	header {
@@ -892,8 +987,10 @@
 		display: flex;
 		height: 55px;
 		border-radius: 16px;
-		margin-top: 40px;
-		overflow: hidden;
+		margin-top: 30px;
+		/* overflow: hidden; */
+		border: 2px solid;
+		border-color: #F2F2F2;
 	}
 
 	#formDeRecherche * {
@@ -903,10 +1000,12 @@
 	}
 
 	#formDeRecherche div {
-		width: 55px;
+		min-width: 55px;
 		text-align: center;
 		background-color: #F2F2F2;
 		text-align: center;
+		border-radius: 13px 0 0 13px;
+		display: block;
 	}
 
 	#formDeRecherche div * {
@@ -915,20 +1014,24 @@
 
 	#formDeRecherche input {
 		border: 0px;
-		border-top: 2px solid;
-		border-bottom: 2px solid;
-		border-color: #F2F2F2;
 		padding-left: 10px;
 		flex: 1;
 		font-weight: 900;
 	}
 
 	#formDeRecherche button {
-		width: 55px;
+		min-width: 55px;
+		min-height: 55px;
 		border: 0;
 		padding: 0 15px 0 15px;
 		background-color: #0065FC;
 		border-radius: 16px;
+		border: 2px solid;
+		border-color: #0065FC;
+		display: block;
+		position: relative;
+		top: -2px;
+		right: -3px;
 	}
 
 	#formDeRecherche button a {
@@ -944,6 +1047,7 @@
 	#filtre {
 		display: flex;
 		flex-wrap: wrap;
+		margin-right: 0;
 	}
 
 	#filtre h2 {
@@ -957,7 +1061,12 @@
 		height: 50px;
 		border-radius: 25px;
 		display: flex;
-		margin: 10px 10px 0 10px;
+		margin: 10px 5px 0 0;
+	}
+
+	.filtres:hover {
+		border-color: #0065FC;
+		
 	}
 
 	.filtres div {
@@ -974,9 +1083,18 @@
 		left: -3px;
 	}
 
+	.filtres:hover div {
+		background-color: #0065FC;
+		border-color: #0065FC;
+	}
+
 	.filtres div i {
 		color: #0065FC;
 		line-height: 45px;
+	}
+
+	.filtres:hover div i {
+		color: #DEEBFF;
 	}
 
 	.filtres input {
@@ -991,7 +1109,7 @@
 
 	#phraseInformative {
 		display: flex;
-		margin-top: 10px;
+		margin-top: 30px;
 		height: 20px;
 		line-height: 20px;
 	}
@@ -1000,8 +1118,8 @@
 		border: 2px solid;
 		border-color: #F2F2F2;
 		margin-right: 10px;
-		width: 20px;
-		height: 20px;
+		width: 22px;
+		height: 22px;
 		border-radius: 50%;
 		text-align: center;
 		line-height: 20px;
@@ -1044,12 +1162,24 @@
 		padding: 4px;
 	}
 
+	#hebergementAMarseille .card:hover {
+		padding: 0;
+	}
+
 	#hebergementAMarseille .card-image {
 		width: 100%;
 		height: 140px;
 		position: relative;
 		border-radius: 23px 23px 0 0;
 		object-fit: cover;
+	}
+
+	#hebergementAMarseille .card:hover .card-image {
+		height: 144px;
+	}
+
+	#hebergementAMarseille .card:hover .card-body {
+		margin: 0 4px 0 4px;
 	}
 
 	#hebergementAMarseille .card-body * {
@@ -1098,15 +1228,16 @@
 
 	#lesPlusPopulaires .titre {
 		justify-content: space-between;
+		margin-top: 20px;
 	}
 
 	#lesPlusPopulaires .titre h2 {
-		margin: 20px 0 15px 30px;
+		margin: 25px 0 15px 20px;
 	}
 
 	#lesPlusPopulaires .titre i {
-		width: 80px;
-		font-size: 25px;
+		width: 45px;
+		font-size: 23px;
 		margin: auto 0 auto 0;
 	}
 
@@ -1129,6 +1260,10 @@
 		padding: 5px;
 	}
 
+	#lesPlusPopulaires .card:hover {
+		padding: 0;
+	}
+
 	#lesPlusPopulaires .card-image {
 		width: 130px;
 		height: 100%;
@@ -1137,10 +1272,18 @@
 		object-fit: cover;
 	}
 
+	#lesPlusPopulaires .card:hover .card-image{
+		width: 135px;
+	}
+
 	#lesPlusPopulaires .card-body {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+	}
+
+	#lesPlusPopulaires .card:hover .card-body {
+		padding: 5px 5px 5px 0;
 	}
 
 	#lesPlusPopulaires .card-body * {
@@ -1173,6 +1316,8 @@
 
 	#activitesAMarseille h2 {
 		margin-left: 20px;
+		font-size: 23px;
+		margin-bottom: 30px;
 	}
 
 	#activitesAMarseille .container {
@@ -1221,7 +1366,7 @@
 		height: 600px;
 	}
 
-	footer div {
+	footer dl {
 		display: flex;
 		flex-direction: column;
 		padding: 0 30px 0 30px;
@@ -1231,12 +1376,13 @@
 		margin-top: 40px;
 	}
 
-	footer ul {
-		list-style: none;
-		padding: 0;
+	footer dt, footer dd{
+		margin: 0 0 16px 0;
+		font-size: 18px;
 	}
 
-	footer li {
-		margin: 7px 0 7px 0;
+	footer dt {
+		margin-top: 50px;
+		font-weight: bold;
 	}
 }
