@@ -102,18 +102,15 @@
 		font-weight: 900;
 	}
 
-	#formDeRecherche button {
+	#formDeRecherche #boutonText {
 		border: 0;
 		padding: 0 15px 0 15px;
 		background-color: #0065FC;
-	}
-
-	#formDeRecherche button a {
 		color: white;
 		font-weight: 900;
 	}
 
-	#formDeRecherche button i {
+	#formDeRecherche #boutonLogo {
 		display: none;
 	}
 
@@ -436,7 +433,6 @@
 
 	#activitesAMarseille .activites-name {
 		height: 50px;
-		padding: auto 0 ;
 		font-weight: bold;
 		font-size: 18px;
 		padding: 18px 0 0 20px;
@@ -568,18 +564,15 @@
 		font-weight: 900;
 	}
 
-	#formDeRecherche button {
+	#formDeRecherche #boutonText {
 		border: 0;
 		padding: 0 15px 0 15px;
 		background-color: #0065FC;
-	}
-
-	#formDeRecherche button a {
 		color: white;
 		font-weight: 900;
 	}
 
-	#formDeRecherche button i {
+	#formDeRecherche #boutonLogo {
 		display: none;
 	}
 
@@ -886,7 +879,6 @@
 
 	#activitesAMarseille .activites-name {
 		height: 50px;
-		padding: auto 0 ;
 		font-weight: bold;
 		font-size: 18px;
 		padding: 18px 0 0 20px;
@@ -923,6 +915,10 @@
 		font-family: 'Raleway', sans-serif;
 	}
 
+	body {
+		min-width: 360px;
+	}
+	
 	h2 {
 		font-size: 22px;
 	}
@@ -1019,7 +1015,11 @@
 		font-weight: 900;
 	}
 
-	#formDeRecherche button {
+	#formDeRecherche #boutonText {
+		display: none;
+	}
+
+	#formDeRecherche #boutonLogo {
 		min-width: 55px;
 		min-height: 55px;
 		border: 0;
@@ -1034,11 +1034,7 @@
 		right: -3px;
 	}
 
-	#formDeRecherche button a {
-		display: none;
-	}
-
-	#formDeRecherche button i {
+	#formDeRecherche #boutonLogo i {
 		color: white;
 		font-weight: 900;
 		line-height: 55px
@@ -1351,7 +1347,6 @@
 
 	#activitesAMarseille .activites-name {
 		height: 50px;
-		padding: auto 0 ;
 		font-weight: bold;
 		font-size: 18px;
 		padding: 18px 0 0 20px;
