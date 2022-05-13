@@ -40,19 +40,19 @@
 		margin-bottom: auto;
 	}
 
-	header div:nth-child(2) {
+	header nav {
 		display: flex;
 		width: 300px;
 	}
 
-	header div:nth-child(2) a {
+	header nav a {
 		flex: 1;
 		display: block;
 		text-align: center;
 		height: 90px;
 	}
 
-	header div:nth-child(2) div {
+	header nav div {
 		flex: 1;
 		font-weight: bold;
 		line-height: 90px;
@@ -313,12 +313,12 @@
 		font-size: 23px;
 	}
 
-	#lesPlusPopulaires .titre i {
+	/* #lesPlusPopulaires .titre path {
 		width: 80px;
 		font-size: 25px;
 		margin: auto 0 0 0;
 		font-weight: bold;
-	}
+	} */
 
 	#lesPlusPopulaires .cardConteneur {
 		display: flex;
@@ -507,19 +507,19 @@
 		margin-bottom: auto;
 	}
 
-	header div:nth-child(2) {
+	header nav {
 		display: flex;
 		width: 300px;
 	}
 
-	header div:nth-child(2) a {
+	header nav a {
 		flex: 1;
 		display: block;
 		text-align: center;
 		height: 90px;
 	}
 
-	header div:nth-child(2) div {
+	header nav div {
 		flex: 1;
 		font-weight: bold;
 		line-height: 90px;
@@ -965,24 +965,24 @@
 		border: 0;
 	}
 
-	header div {
+	header nav {
 		display: flex;
+
 	}
 
-	header div:nth-child(2) a {
+	header nav a {
 		flex: 1;
 		display: block;
 		text-align: center;
 		height: 90px;
 	}
 
-	header div:nth-child(2) div {
+	header nav div {
 		font-weight: bold;
-		line-height: 90px;
 		padding: 3px 10px 0 10px;
 	}
 
-	header div div {
+	header nav div {
 		display: block;
 		border-bottom: 3px solid;
 		border-color: #F2F2F2;
