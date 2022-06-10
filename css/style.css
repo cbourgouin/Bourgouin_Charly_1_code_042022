@@ -11,7 +11,6 @@
 
 body {
 	max-width: 1900px;
-	min-width: 1270px;
 	margin: 0 auto;
 }
 
@@ -152,7 +151,7 @@ main div:nth-child(1) a {
 	height: 50px;
 	text-align: center;
 	display: block;
-	border-radius: 23px;
+	border-radius: 25px;
 	background-color: #DEEBFF;
 	border: 3px solid;
 	border-color: #DEEBFF;
@@ -211,7 +210,7 @@ main div:nth-child(1) a {
 }
 
 #hebergementAMarseille {
-	flex: 3;
+	flex: 2;
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	margin: 0 50px 0 0;
@@ -225,35 +224,39 @@ main div:nth-child(1) a {
 #hebergementAMarseille .cardConteneur {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-around;
-	min-width: 700px;
+	margin: 0 20px 20px 20px;
 }
 
 #hebergementAMarseille .card {
-	max-width: 320px;
-	min-width: 300px;
+	flex: 1;
+	min-width: 253px;
+	height: 220px;
 	display: block;
 	background-color: white;
 	box-shadow: 0px 5px 20px #999;
-	border-radius: 23px;
-	margin: 0 20px 50px 20px;
+	border-radius: 20px;
+	margin: 20px 20px 20px 20px;
 	padding: 4px;
 }
 
 #hebergementAMarseille .card:hover {
-	padding: 0;
+	overflow: hidden;
 }
 
 #hebergementAMarseille .card-image {
 	width: 100%;
-	height: 160px;
+	height: 130px;
 	position: relative;
 	border-radius: 23px 23px 0 0;
 	object-fit: cover;
 }
 
 #hebergementAMarseille .card:hover .card-image {
-	height: 164px;
+	position: relative;
+	left: -4px;
+	top: -4px;
+	height: 134px;
+	width: 105%;
 }
 
 #hebergementAMarseille .card-body * {
@@ -261,7 +264,8 @@ main div:nth-child(1) a {
 }
 
 #hebergementAMarseille .card:hover .card-body {
-	margin: 0 4px 0 4px;
+	position: relative;
+	top: -4px;
 }
 
 #hebergementAMarseille .card-price {
@@ -288,7 +292,7 @@ main div:nth-child(1) a {
 
 #hebergementAMarseille p:nth-child(3) {
 	font-weight: bold;
-	margin: 0 0 40px 30px;
+	margin: 0 0 40px 40px;
 }
 
 #lesPlusPopulaires {
@@ -311,11 +315,17 @@ main div:nth-child(1) a {
 	font-size: 23px;
 }
 
-#lesPlusPopulaires .titre i {
+#lesPlusPopulaires .titre svg {
 	width: 80px;
-	font-size: 25px;
-	margin: auto 0 0 0;
-	font-weight: bold;
+	height: 80px;
+}
+
+#lesPlusPopulaires .titre svg path {
+	width: 80px;
+	height: 80px;
+	/* font-size: 25px; */
+	/* margin: auto 0 0 0; */
+	/* font-weight: bold; */
 }
 
 #lesPlusPopulaires .cardConteneur {
@@ -323,19 +333,20 @@ main div:nth-child(1) a {
 	flex-direction: column;
 	justify-content: space-around;
 	height: 100%;
-	margin: 20px 30px 0 30px;
+	margin: 20px 20px 20px 20px;
 }
 
 #lesPlusPopulaires .card {
-	width: 410px;
-	height: 150px;
+	width: auto;
 	display: flex;
-	margin: 0 auto;
+	height: fit-content;
+	min-height: 150px;
+	max-height: 150px;
+	margin: 20px 20px 20px 20px;
 	background-color: white;
 	box-shadow: 0px 5px 20px #999;
 	border-radius: 25px;
 	padding: 5px;
-	margin-bottom: 50px;
 }
 
 #lesPlusPopulaires .card:hover {
@@ -344,7 +355,6 @@ main div:nth-child(1) a {
 
 #lesPlusPopulaires .card-image {
 	width: 130px;
-	height: 100%;
 	position: relative;
 	border-radius: 25px 0 0 25px;
 	object-fit: cover;
@@ -370,6 +380,10 @@ main div:nth-child(1) a {
 
 #lesPlusPopulaires .card-title {
 	font-size: 15px;
+	max-height: 65px;
+	overflow: hidden;
+  	text-overflow: ellipsis; 
+	/* white-space: nowrap; */
 }
 
 #lesPlusPopulaires .card-price {
@@ -403,7 +417,7 @@ main div:nth-child(1) a {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-content: space-between;
-	min-width: 1175px;
+	min-width: 100%;
 }
 
 #activitesAMarseille .card {
@@ -412,6 +426,7 @@ main div:nth-child(1) a {
 	width: 24%;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
 #activitesAMarseille .prct100 {
@@ -442,8 +457,12 @@ main div:nth-child(1) a {
 #activitesAMarseille .activites-name {
 	height: 50px;
 	font-weight: bold;
+	line-height: 50px;
 	font-size: 18px;
-	padding: 18px 0 0 20px;
+	padding: 0 20px 0 20px;
+	overflow: hidden;
+  	text-overflow: ellipsis; 
+	white-space: nowrap;
 }
 
 footer {
@@ -480,7 +499,7 @@ footer dt {
 	}
 
 	h2 {
-		font-size: 20px;
+		font-size: 25px;
 		margin-bottom: 10px;
 	}
 
@@ -530,22 +549,13 @@ footer dt {
 		margin: 0 20px 0 0;
 	}
 
-	#hebergementAMarseille h2:nth-child(1) {
-		font-size: 18px;
-	}
-
 	#hebergementAMarseille .cardConteneur {
 		min-width: initial;
 		margin: 0 20px 0 20px;
 	}
 
 	#hebergementAMarseille .card {
-		max-width: initial;
-		min-width: initial;
 		width: 260px;
-		margin: initial;
-		margin: 0 auto;
-		margin-bottom: 40px;
 	}
 
 
@@ -581,7 +591,6 @@ footer dt {
 
 	#lesPlusPopulaires .titre h2 {
 		margin: 40px 0 0 30px;
-		font-size: 18px;
 	}
 
 	#lesPlusPopulaires .cardConteneur {
@@ -589,9 +598,9 @@ footer dt {
 	}
 
 	#lesPlusPopulaires .card {
-		width: 98%;
-		margin-top: 15px;
-		margin-bottom: initial;
+		margin-bottom: 20px;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 
 	#activitesAMarseille {
@@ -600,7 +609,7 @@ footer dt {
 	}
 
 	#activitesAMarseille h2 {
-		margin: 30px 0 20px 20px;
+		margin: 40px 0 45px 0px;
 	}
 
 	#activitesAMarseille .container {
@@ -611,11 +620,11 @@ footer dt {
 	}
 
 	#activitesAMarseille .card {
-		height: 200px;
+		height: 300px;
 		width: 100%;
 		margin: 0 auto;
 		background-color: white;
-		border-radius: 23px;
+		border-radius: 20px;
 		margin-bottom: 40px;
 	}
 }
@@ -628,7 +637,7 @@ footer dt {
 	}
 
 	h2 {
-		font-size: 22px;
+		font-size: 25px;
 		margin-bottom: initial;
 	}
 
@@ -676,8 +685,7 @@ footer dt {
 
 	#phrasesIntroductive,
 	#formDeRecherche,
-	#filtre,
-	#phraseInformative {
+	#filtre {
 		margin: 0 30px 0 30px;
 	}
 
@@ -770,21 +778,28 @@ footer dt {
 		margin: 10px 5px 0 0;
 	}
 
+	#phraseInformative{
+		line-height: initial;
+		margin: 30px 30px 45px 30px;
+	}
+
 	#hebergementAMarseille {
 		background-color: white;
 		margin: 0;
 	}
 
 	#hebergementAMarseille h2:nth-child(1) {
-		margin: 40px 0 25px 30px;
-		font-size: initial;
+		margin: 40px 0 15px 30px;
+	}
+
+	#hebergementAMarseille .cardConteneur {
+		flex-direction: column;
 	}
 
 	#hebergementAMarseille .card {
+		margin-left: 0px;
 		height: 220px;
 		width: 100%;
-		margin: initial;
-		margin-bottom: 40px;
 	}
 
 	#hebergementAMarseille .card-image {
@@ -796,7 +811,7 @@ footer dt {
 	}
 
 	#hebergementAMarseille .card-body * {
-		margin: 0;
+		margin: 4px 0 4px 0;
 	}
 
 	#lesPlusPopulaires {
@@ -813,8 +828,7 @@ footer dt {
 	}
 
 	#lesPlusPopulaires .titre h2 {
-		font-size: initial;
-		margin: 25px 0 15px 20px;
+		margin: 25px 0 10px 20px;
 	}
 
 	#lesPlusPopulaires .titre i {
@@ -854,9 +868,10 @@ footer dt {
 	}
 
 	#activitesAMarseille .card {
+		height: 200px;
 		display: block;
 		box-shadow: 0px 5px 20px #999;
-		border-radius: 23px;
+		border-radius: 20px;
 		margin-bottom: 40px;
 		display: flex;
 		flex-direction: column;
@@ -866,7 +881,7 @@ footer dt {
 		height: 50px;
 		font-weight: bold;
 		font-size: 18px;
-		padding: 18px 0 0 20px;
+		padding: 0 0 0 20px;
 	}
 
 	footer {
